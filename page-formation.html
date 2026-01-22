@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///Users/lauraballo/Desktop/site_stars/page-formation.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Management - 5 Stars Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Formation Management - 5 Stars Training_files/css2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FAF7F2;
+            --terracotta: #B87847;
+            --terracotta-dark: #9A5F37;
+            --dark-brown: #4A3428;
+            --light-beige: #F5EFE7;
+            --accent-gold: #D4A574;
+            --text-dark: #2C2419;
+            --coral: #E56C5A;
+            --grey: #F6F5F5;
+            --light-grey: #605A53;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FFFFFF;
+            color: var(--text-dark);
+            line-height: 1.7;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--light-beige) 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--terracotta), transparent);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInDown 0.6s ease forwards;
+        }
+
+        .title-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--terracotta);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+
+        .subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--terracotta);
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.6s forwards;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.8s forwards;
+        }
+
+        .stars {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        .rating-text {
+            color: var(--dark-brown);
+            font-weight: 500;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pf-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 4rem;
+        }
+
+        .content {
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--terracotta), transparent);
+            opacity: 0.2;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--dark-brown);
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60%;
+            height: 2px;
+            background: var(--terracotta);
+        }
+
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            color: var(--dark-brown);
+            margin: 2.5rem 0 1.5rem;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--terracotta);
+            font-size: 0.8rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .price-tag {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--light-beige), var(--cream));
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: var(--terracotta);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-details {
+            font-size: 0.95rem;
+            color: var(--dark-brown);
+            opacity: 0.8;
+        }
+
+        .duration {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(184, 120, 71, 0.2);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1.2rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--coral);
+            color: white;
+            box-shadow: 0 4px 15px rgba(229, 108, 90, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #d15a48;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(229, 108, 90, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--terracotta);
+            border: 2px solid var(--terracotta);
+        }
+
+        .btn-secondary:hover {
+            background: var(--terracotta);
+            color: white;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--light-beige);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #ebe4d8;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--terracotta);
+            flex-shrink: 0;
+        }
+
+        .option {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #fff, var(--light-beige));
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            border-color: var(--terracotta);
+            transform: translateX(5px);
+        }
+
+        .option-title {
+            font-weight: 600;
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .option-price {
+            color: var(--terracotta);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--light-beige), var(--cream));
+            border-left: 4px solid var(--terracotta);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--terracotta);
+            margin-bottom: 1rem;
+        }
+
+        .certification-banner {
+            background: linear-gradient(135deg, var(--terracotta), var(--terracotta-dark));
+            color: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certification-banner::before {
+            content: '★';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.1;
+            right: -2rem;
+            top: -4rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .certification-banner h3 {
+            color: white;
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .certification-banner p {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0;
+        }
+
+        .options-inline {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .options-inline h4 {
+            color: white;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .option-inline {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.2rem 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .option-inline:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .option-inline-title {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+        }
+
+        .option-inline-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 0.4rem;
+        }
+
+        .option-inline-price {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .options-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, var(--light-beige) 0%, var(--cream) 50%, var(--light-beige) 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .options-image::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--terracotta) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.1;
+            animation: rotate 60s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .options-image-text {
+            position: relative;
+            z-index: 1;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--terracotta);
+            font-style: italic;
+        }
+
+               /* Footer Styles */
+               footer {
+            background-color: #F6F5F5;
+            padding: 4rem 1.5rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-separator {
+            width: 50px;
+            height: 1px;
+            background-color: #8E542B;
+            margin: 0 auto 2rem;
+        }
+
+        .footer-title {
+            font-size: 0.625rem;
+            letter-spacing: 0.4em;
+            font-weight: 300;
+            color: #2C2419;
+            margin-bottom: 1rem;
+        }
+
+        .footer-subtitle {
+            font-size: 0.75rem;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links-container {
+            margin: 2rem 0 1.5rem;
+        }
+
+        .footer-links {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-links a {
+            font-size: 0.625rem;
+            letter-spacing: 0.05em;
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #8E542B;
+        }
+
+        .footer-links span {
+            color: rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-copyright {
+            font-size: 0.625rem;
+            color: rgba(0, 0, 0, 0.3);
+            letter-spacing: 0.05em;
+        }
+
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideIn 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: none;
+            border: none;
+            padding: 0;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .close-modal:hover {
+            color: var(--terracotta);
+            transform: rotate(90deg);
+        }
+
+        .modal h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            color: var(--dark-brown);
+            margin-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .modal-subtitle {
+            color: var(--terracotta);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--terracotta);
+            box-shadow: 0 0 0 3px rgba(142, 84, 43, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-submit {
+            background: var(--coral);
+            color: white;
+            border: none;
+            padding: 1.1rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 1rem;
+        }
+
+        .form-submit:hover {
+            background: #d15a48;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(229, 108, 90, 0.3);
+        }
+
+        @media (max-width: 968px) {
+            .pf-container {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .modal-content {
+                padding: 2rem 1.5rem;
+                width: 95%;
+            }
+
+            .modal h3 {
+                font-size: 1.8rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        /* ============ Certifications & Social ============ */
+.cert-social {
+  background: var(--grey); /* #F6F5F5 */
+  padding: 3.5rem 1.5rem;
+}
+
+.cert-social .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cert-social .kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(44, 36, 25, 0.55); /* text-dark adouci */
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.cert-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.cert-logos img {
+  height: 42px;          /* ✅ taille maîtrisée */
+  width: auto;
+  max-width: 180px;      /* ✅ évite les logos “immenses” */
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.cert-logos img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.cert-sep {
+  width: 1px;
+  height: 56px;
+  margin: 2.5rem auto;
+  background: linear-gradient(to bottom, transparent, rgba(184,120,71,0.35), transparent);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.social-icons a {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.social-icons a svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(0,0,0,0.55);
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  border-color: var(--terracotta);
+  background: var(--terracotta);
+}
+
+.social-icons a:hover svg {
+  fill: #fff;
+}
+
+/* Responsive : logos un peu + grands sur desktop */
+@media (min-width: 900px) {
+  .cert-logos img { height: 48px; max-width: 220px; }
+}
+
+/* ============ Footer personnalisé ============ */
+.custom-footer {
+    background: #FFFFFF;
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.custom-footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.custom-footer .footer-divider {
+    width: 130px;
+    height: 2px;
+    background: var(--terracotta);
+    margin: 0 auto 3rem;
+}
+
+.custom-footer .footer-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.custom-footer .footer-subtitle {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 2.5rem;
+}
+
+.custom-footer .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.custom-footer .footer-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.custom-footer .footer-links a:hover {
+    color: var(--terracotta);
+}
+
+.custom-footer .footer-separator {
+    color: rgba(0, 0, 0, 0.2);
+    margin: 0 0.3rem;
+}
+
+.custom-footer .footer-copyright {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 640px) {
+    .custom-footer .footer-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .custom-footer .footer-separator {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="breadcrumb">Accueil &gt; Formations &gt; Gestion d'équipe - Management</div>
+        <div class="title-section">
+            <span class="badge">Service client</span>
+            <h1>Offrir une qualité de service 5 étoiles</h1>
+            <p class="subtitle">L'excellence opérationnelle et l'intelligence émotionnelle au service de vos clients</p>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4,7/5</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="pf-container">
+        <main class="content">
+            <section class="section">
+                <p><em>Vos clients (ou usagers) sentent-ils immédiatement la différence entre un service correct et un service qui marque ?</em></p>
+                    <p><em>Une formation très opérationnelle pour passer <strong>du service automatique au service noble</strong>, avec des scripts, des check-lists et des scénarios réalistes, sans jouer un rôle ni vous épuiser.</em></p>
+                    <br/>
+                    <h2>Programme de la formation</h2>
+                <div>
+                    <h3>Passer du service automatique au service personnalisé : l’impact de l’image sur la perception client</h3>
+                    <ul>
+                        <li>Comprendre les attentes “5 étoiles” : simplicité exigeante, régularité, cohérence, sensation de sécurité.</li>
+                        <li>Installer une présence qui rassure : premiers mots, diction, rythme, regard, micro-signes de considération.</li>
+                        <li>Stabiliser les codes non-verbaux : posture, distance juste, mimiques, calme visible, chaleur sans familiarité.</li>
+                        <li>Définir des standards réalistes : promesses tenables, points non négociables, marges d’initiative.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Maîtriser la relation fine : personnaliser sans s’épuiser</h3>
+                    <ul>
+                        <li>Lire entre les lignes : besoins non formulés, signaux faibles, contexte multiculturel, profils de clients.</li>
+                        <li>Calibrer le conseil et l’offre : questions utiles, reformulation, clarté, proposition, fermeture élégante.</li>
+                        <li>Déployer le langage positif : bannir les mots noirs (problème, petit, essayer, non), vocabulaire engageant et rassurant.</li>
+                        <li>Mettre en scène sans jouer un rôle : attention à l’invisible, mémoire du détail, storytelling utile et sobre.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Gérer les réclamations et les tensions : garder l’élégance sous pression</h3>
+                    <ul>
+                        <li>Désamorcer une réclamation : écoute active, excuses justes, orientation solution, clôture propre, prévention de rechute.</li>
+                        <li>Tenir un cadre sans rigidité : respect des procédures, équité, marge de manœuvre, cohérence de service.</li>
+                        <li>Réduire le temps d’attente vécu : information claire, micro-attentions, alternatives concrètes, reprise du contrôle.</li>
+                        <li>Protéger son énergie : charge mentale, stress, limites, récupération courte, continuité pro/perso.</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Ancrer l’excellence dans la durée : faire de la qualité une signature collective</h3>
+                    <ul>
+                        <li>Renforcer le service interne : transmissions, coordination, exemplarité, solidarité, fiabilité entre collègues.</li>
+                        <li>Affiner un style personnel : rester soi, respecter les standards, élégance stable, sobriété professionnelle.</li>
+                        <li>Solliciter le ressenti client : retours utiles, fidélisation, formulation des demandes de feedback.</li>
+                        <li>Transformer chaque erreur : apprentissage, protocole d’auto-amélioration, rituels d’équipe, progrès mesurables.</li>
+                    </ul>
+                </div>
+                <div class="highlight-box">
+                    <h4>A qui s'adresse cette formation ?</h4>
+                    <p>Collaborateurs en contact client : accueil, commerce, services, hôtellerie-restauration, tourisme, secrétariats, centres d’appel, guichets, fonctions support exposées.</p>
+                    <p>Tout collaborateur de toute organisation souhaitant renforcer une relation client fiable, chaleureuse et mémorable, y compris le hors luxe.</p>
+                    <p>Cette formation ne nécessite pas de prérequis techniques.</p>
+                    <p>Elle est toutefois recommandée en session présentielle afin de profiter pleinement des mises en situation réalistes.</p>
+                    <p>Cette formation ne nécessite pas de prérequis techniques.</p>
+                    <p>Elle est toutefois recommandée en session présentielle afin de profiter pleinement des mises en situation réalistes.</p>
+                    
+                </div>
+                <div class="highlight-box">
+                    <h4>Objectif pédagogique</h4>
+                    <p>Installer une posture de service 5 étoiles.</p>
+                    <p>Appuyer l’excellence sur la personnalisation. </p>
+                    <p>Traiter les situations délicates. </p>
+                    <p>Faire durer l’excellence. </p>
+                       
+                </div>
+                <div class="highlight-box">
+                    <h4>Moyens pédagogiques</h4>
+                    <p>Immersion et entraînement : mises en situation réalistes, scénarios courts, répétitions, débriefings précis.</p>
+                    <p>Feedback opérationnel : ajustements minute sur posture, mots, rythme, non-verbal, gestion des tensions.</p>
+                    <p>Outils fournis : scripts, trames d’accueil et de réclamation, check-lists de standards, plan d’action équipe</p>
+                </div>
+
+                <div class="certification-banner">
+                    <h3>En option :</h3>
+                    <p>Pour aller plus loin, la formation peut être enrichie d’options modulaires permettant de transformer le parcours en une démarche certifiante et opérationnelle, directement ancrée dans la réalité terrain.</p>                    
+                    <div class="options-inline">
+                        <h4>Options disponibles</h4>
+                        
+                        <div class="option-inline">
+                            <div class="option-inline-title">Diagnostic mystère </div>
+                            <div class="option-inline-desc">2 x 90 minutes, observation + restitution, jusqu’à 12 personnes</div>
+                            <div class="option-inline-price">890 € HT (1 068 € TTC)</div>
+                        </div>
+
+                        <div class="option-inline">
+                            <div class="option-inline-title">Atelier de certification HQS </div>
+                            <div class="option-inline-desc">1 jours</div>
+                            <div class="option-inline-price">790 € HT (948 € TTC) par personne</div>
+                        </div>
+
+                        <div class="option-inline">
+                            <div class="option-inline-title">Accompagnement sur site </div>
+                            <div class="option-inline-desc">1 jour + débriefing manager, jusqu’à 8 personnes</div>
+                            <div class="option-inline-price">1 170 € HT (1 404 € TTC)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="card">
+                <div class="price-tag">
+                    <div class="price">1290 € HT</div>
+                    <div class="price-details">(1548 € TTC)</div>
+                    <div class="duration">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        <span>Durée : 2 jours</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="openModal()">S'inscrire</button>
+                <button class="btn btn-secondary" onclick="demanderDevis()">Demander un devis</button>
+
+                <div style="margin-top: 2rem;">
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <strong>01 64 23 68 51</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Modal Inscription -->
+    <div id="inscriptionModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">×</button>
+            <h3>Inscription à la formation</h3>
+            <p class="modal-subtitle">Encadrer une équipe pour la première fois</p>
+            
+            <form id="inscriptionForm" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nom &amp; Prénom *</label>
+                        <input type="text" name="nom_prenom" required="" placeholder="Votre nom complet">
+                    </div>
+                    <div class="form-group">
+                        <label>Entreprise</label>
+                        <input type="text" name="entreprise" placeholder="Nom de votre entreprise">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" required="" placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Téléphone *</label>
+                        <input type="tel" name="telephone" required="" placeholder="+33 6 00 00 00 00">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Informations complémentaires, dates souhaitées..."></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Envoyer ma demande d'inscription</button>
+            </form>
+        </div>
+    </div>
+<!-- Certifications & Réseaux sociaux -->
+<section class="cert-social">
+    <div class="wrap">
+  
+      <p class="kicker">FORMATIONS CERTIFIÉES QUALIOPI</p>
+  
+      <div class="cert-logos">
+        <img src="datadock-logo.png" alt="Datadock">
+        <img src="iso9001-logo.png" alt="ISO 9001 Bureau Veritas">
+        <img src="qualiopi-logo.png" alt="Qualiopi - Certification qualité">
+      </div>
+  
+      <div class="cert-sep"></div>
+  
+      <p class="kicker">SUIVEZ-NOUS</p>
+  
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/institut-francois-bocquet/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <!-- SVG LinkedIn -->
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+        </a>
+  
+        <a href="https://www.facebook.com/InstitutFrancoisBocquet" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <!-- SVG Facebook -->
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+        </a>
+  
+        <a href="https://www.instagram.com/institut.f.bocquet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <!-- SVG Instagram -->
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+        </a>
+  
+        <a href="https://www.youtube.com/user/InstitutFBocquet" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <!-- SVG YouTube -->
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+        </a>
+      </div>
+  
+    </div>
+  </section>
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-divider"></div>
+            
+            <h4 class="footer-title">INSTITUT FRANÇOIS BOCQUET</h4>
+            <p class="footer-subtitle">Formation Premium · Service de Luxe</p>
+            
+            <!-- Liens légaux -->
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="CDV-Institut-Francois-Bocquet-2021-2022.pdf" target="_blank" download>
+                    Conditions générales de vente
+                </a>
+            </div>
+            
+            <p class="footer-copyright">© 2026 Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal functions
+        function openModal() {
+            document.getElementById('inscriptionModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('inscriptionModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on outside click
+        document.getElementById('inscriptionModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Construire le corps de l'email
+            const emailBody = `
+Nouvelle demande d'inscription à la formation "Encadrer une équipe pour la première fois"
+
+Informations du participant:
+- Nom & Prénom: ${data.nom_prenom}
+- Email: ${data.email}
+- Téléphone: ${data.telephone}
+- Entreprise: ${data.entreprise || 'Non renseignée'}
+
+Message:
+${data.message || 'Aucun message'}
+            `.trim();
+
+            // Créer le mailto link
+            const mailtoLink = `mailto:info@5stars-training.com?subject=Inscription Formation Management - ${data.nom_prenom}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Ouvrir le client mail
+            window.location.href = mailtoLink;
+            
+          // Fermer le modal après un court délai
+            setTimeout(() => {
+                closeModal();
+                event.target.reset();
+            }, 500);
+        }
+
+        // Demander un devis
+        function demanderDevis() {
+            const titreFormation = "Encadrer une équipe pour la première fois";
+            const objet = `Demande de devis - formation "${titreFormation}"`;
+            const corps = `Bonjour,
+
+Je m'appelle [Prénom NOM], je vous contacte car je souhaiterais obtenir un devis pour la formation « ${titreFormation} ».
+
+Nous envisageons de former [nombre] participant(s) sur la période [dates ou mois souhaités], idéalement en [présentiel / distanciel / sur site] à [ville / site].
+
+Pourriez-vous, s'il vous plaît, me transmettre le devis correspondant ?
+
+Je vous remercie par avance et reste à votre disposition pour vous préciser notre besoin.
+
+Bien cordialement`;
+
+            const mailtoLink = `mailto:info@5stars-training.com?subject=${encodeURIComponent(objet)}&body=${encodeURIComponent(corps)}`;
+            window.location.href = mailtoLink;
+        }
+    </script>
+
+</body></html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales - 5 Stars Training</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Menu burger mobile - half-screen drawer */
+        .mobile-menu-drawer {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu-drawer.active {
+            transform: translateX(0);
+        }
+        .menu-overlay {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .menu-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white text-black">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-black/5 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 py-4 lg:py-6 flex justify-between items-center">
+            <!-- Logo à gauche -->
+            <a href="index.html" class="flex items-center">
+                <img src="5-stars-training.png" alt="5 Stars Training" class="h-8 lg:h-10 hover:opacity-80 transition-opacity duration-300">
+            </a>
+            
+            <!-- Navigation desktop - masquée en mobile -->
+            <div class="hidden lg:flex items-center gap-8">
+                <!-- Navigation -->
+                <nav class="flex items-center gap-10">
+                    <a href="index.html#parcours" class="text-[11px] tracking-[0.3em] font-light hover:text-amber-700 transition-colors duration-300 uppercase">Parcours</a>
+                    <a href="index.html#expertise" class="text-[11px] tracking-[0.3em] font-light hover:text-amber-700 transition-colors duration-300 uppercase">Expertise</a>
+                </nav>
+                
+                <!-- Sélecteur de langue avec chinois -->
+                <div class="flex items-center gap-2">
+                    <button class="text-[10px] tracking-wider font-semibold hover:text-amber-700 transition-colors duration-300 px-2 py-1">
+                        🌐 FR
+                    </button>
+                    <span class="text-black/20">|</span>
+                    <button class="text-[10px] tracking-wider font-light text-black/40 hover:text-amber-700 transition-colors duration-300 px-2 py-1">
+                        EN
+                    </button>
+                    <span class="text-black/20">|</span>
+                    <button class="text-[10px] tracking-wider font-light text-black/40 hover:text-amber-700 transition-colors duration-300 px-2 py-1">
+                        中文
+                    </button>
+                </div>
+                
+                <!-- Bouton Contact en orange -->
+                <a href="index.html#contact" class="text-[11px] tracking-[0.3em] font-light px-8 py-4 text-white hover:opacity-90 transition-all duration-300 uppercase shadow-lg" style="background-color: #A75923;">
+                    Nous contacter
+                </a>
+            </div>
+            
+            <!-- Burger menu mobile -->
+            <button id="burgerBtn" class="lg:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-center">
+                <span class="w-6 h-0.5 bg-black transition-all"></span>
+                <span class="w-6 h-0.5 bg-black transition-all"></span>
+                <span class="w-6 h-0.5 bg-black transition-all"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu mobile half-screen avec overlay -->
+    <!-- Overlay semi-transparent -->
+    <div id="menuOverlay" class="menu-overlay fixed inset-0 bg-black/40 z-40 lg:hidden"></div>
+    
+    <!-- Drawer menu depuis la droite -->
+    <div id="mobileMenu" class="mobile-menu-drawer fixed top-0 right-0 h-full bg-white z-50 lg:hidden w-4/5 sm:w-1/2 shadow-2xl">
+        <div class="flex flex-col items-center justify-center h-full gap-8 px-6">
+            <nav class="flex flex-col items-center gap-8">
+                <a href="index.html#parcours" class="text-lg tracking-[0.2em] font-light hover:text-amber-700 transition-colors duration-300 uppercase mobile-menu-link">Parcours</a>
+                <a href="index.html#expertise" class="text-lg tracking-[0.2em] font-light hover:text-amber-700 transition-colors duration-300 uppercase mobile-menu-link">Expertise</a>
+            </nav>
+            
+            <!-- Langues mobile -->
+            <div class="flex items-center gap-4">
+                <button class="text-sm tracking-wider font-semibold hover:text-amber-700 transition-colors duration-300 px-3 py-2">
+                    🌐 FR
+                </button>
+                <span class="text-black/20">|</span>
+                <button class="text-sm tracking-wider font-light text-black/40 hover:text-amber-700 transition-colors duration-300 px-3 py-2">
+                    EN
+                </button>
+                <span class="text-black/20">|</span>
+                <button class="text-sm tracking-wider font-light text-black/40 hover:text-amber-700 transition-colors duration-300 px-3 py-2">
+                    中文
+                </button>
+            </div>
+            
+            <!-- Contact mobile -->
+            <a href="index.html#contact" class="text-sm tracking-[0.2em] font-light px-10 py-4 text-white hover:opacity-90 transition-all duration-300 uppercase shadow-lg mobile-menu-link" style="background-color: #A75923;">
+                Nous contacter
+            </a>
+        </div>
+    </div>
+
+    <!-- Contenu principal - Mentions légales -->
+    <section class="pt-32 md:pt-36 lg:pt-40 pb-20 md:pb-32 lg:pb-40 px-6 md:px-12 lg:px-16">
+        <div class="max-w-4xl mx-auto">
+            <!-- Titre principal -->
+            <div class="text-center mb-16 md:mb-20 lg:mb-24 fade-in-up opacity-0">
+                <div class="w-12 md:w-14 lg:w-16 h-px bg-amber-700 mx-auto mb-8 md:mb-10 lg:mb-12"></div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extralight mb-6 md:mb-7 lg:mb-8">Mentions légales</h1>
+            </div>
+
+            <!-- Contenu des mentions légales -->
+            <div class="space-y-12 md:space-y-14 lg:space-y-16 text-black/70 leading-loose font-light fade-in-up opacity-0 animation-delay-200">
+                
+                <!-- RESPONSABLE DU SITE -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">RESPONSABLE DU SITE</h2>
+                    <div class="space-y-2 text-base md:text-lg">
+                        <p class="font-normal text-black/80">INSTITUT FRANÇOIS BOCQUET</p>
+                        <p>Siège social : 4 rue de la Coudre, 77590 Fontaine-Le-Port, France</p>
+                        <p>Téléphone : <a href="tel:0164236851" class="text-amber-700 hover:underline">01 64 23 68 51</a></p>
+                        <p>E-mail : <a href="mailto:info@5stars-training.com" class="text-amber-700 hover:underline">info@5stars-training.com</a></p>
+                        <p>Site web : <a href="https://www.5stars-training.com" target="_blank" rel="noopener noreferrer" class="text-amber-700 hover:underline">www.5stars-training.com</a></p>
+                        <p class="pt-2">Enregistré sous le numéro 11 77 01278 77 (ne vaut pas agrément de l'État)</p>
+                        <p>Immatriculation : RCS Melun B 383 199 288</p>
+                        <p>SARL au capital de 1.185.105 euros</p>
+                        <p>SIRET : 383 199 288 00036</p>
+                        <p>NAF : 8559A</p>
+                        <p>TVA intra-communautaire : FR 48383199288</p>
+                        <p class="pt-2">Webmaster et Webdesigner : Laure Piébac</p>
+                        <p>Développeurs : Teddy Thomas – Ervin Bara</p>
+                    </div>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- CRÉDITS -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">CRÉDITS</h2>
+                    <p class="text-base md:text-lg">Crédits photos : © FOTOLIA – PhotoAlto – Istock / Getty Image – Thinkstock</p>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- DROITS DE REPRODUCTION -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">DROITS DE REPRODUCTION</h2>
+                    <p class="text-base md:text-lg">En application de la loi du 11 mars 1957 (art. 41) et du code de la propriété intellectuelle du 1er juillet 1992 : l'ensemble des textes, illustrations, photographies, plans, dessins, animations, vidéos, sons contenus sur ce site ne peuvent être utilisés ou reproduits sans l'autorisation de l'éditeur.</p>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- TRAITEMENT DES DONNÉES PERSONNELLES -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">TRAITEMENT DES DONNÉES PERSONNELLES</h2>
+                    <div class="space-y-4 text-base md:text-lg">
+                        <p>Les informations recueillies font l'objet d'un traitement informatique destiné à la gestion commerciale. Les destinataires des données sont nos services Commercial, Comptabilité et les formateurs assurant l'animation des stages.</p>
+                        <p>Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d'un droit d'accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à :</p>
+                        <div class="pl-6 border-l-2 border-amber-700/20">
+                            <p>Institut François Bocquet</p>
+                            <p>4, rue de la Coudre</p>
+                            <p>77590 Fontaine-le-Port</p>
+                            <p>Tél : <a href="tel:0164236851" class="text-amber-700 hover:underline">01 64 23 68 51</a></p>
+                            <p>Fax : 01 64 23 68 36</p>
+                            <p>Mail : <a href="mailto:info@5stars-training.com" class="text-amber-700 hover:underline">info@5stars-training.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- CONFIDENTIALITÉ DES DONNÉES -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">CONFIDENTIALITÉ DES DONNÉES</h2>
+                    <p class="text-base md:text-lg">Nous nous engageons à protéger vos données personnelles et votre vie privée. Nous utilisons les informations que vous nous transmettez pour traiter vos demandes et vous faire part de notre réponse.</p>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- COMMUNICATION DE VOS DONNÉES PERSONNELLES À DES TIERS -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">COMMUNICATION DE VOS DONNÉES PERSONNELLES À DES TIERS</h2>
+                    <p class="text-base md:text-lg">Nous ne vendons, ni ne louons, ni ne communiquons gratuitement à des tiers les informations vous concernant.</p>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- MODIFICATION DE VOS INFORMATIONS -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">MODIFICATION DE VOS INFORMATIONS</h2>
+                    <p class="text-base md:text-lg">En application de l'article 27 de la loi Informatique et Libertés du 6 janvier 1978, vous disposez d'un droit d'accès et de rectification sur les données vous concernant. Pour exercer ces droits, il vous suffit de contacter par mail, courrier ou formulaire de contact l'éditeur de ce site.</p>
+                </div>
+
+                <div class="h-px bg-gradient-to-r from-transparent via-amber-700/20 to-transparent"></div>
+
+                <!-- CONDITIONS GÉNÉRALES DE VENTE -->
+                <div>
+                    <h2 class="text-xl md:text-2xl font-light text-black mb-4 md:mb-5 lg:mb-6 tracking-wide">CONDITIONS GÉNÉRALES DE VENTE</h2>
+                    <p class="text-base md:text-lg">Toute commande passée auprès de INSTITUT FRANÇOIS BOCQUET implique l'adhésion entière et sans réserve du client aux présentes Conditions Générales de Vente.</p>
+                </div>
+
+            </div>
+
+            <!-- Bouton retour -->
+            <div class="text-center mt-16 md:mt-20 lg:mt-24 fade-in-up opacity-0">
+                <a href="index.html" class="group inline-flex items-center gap-3 text-sm tracking-wider text-amber-700 hover:text-amber-800 transition-colors duration-300 font-light">
+                    <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    <span>Retour à l'accueil</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 md:py-20 lg:py-24 px-6 md:px-12 lg:px-16 border-t border-black/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-6 md:mb-7 lg:mb-8">
+                <div class="w-12 md:w-14 lg:w-16 h-px bg-amber-700 mx-auto mb-6 md:mb-7 lg:mb-8"></div>
+            </div>
+            <h4 class="text-[10px] tracking-[0.4em] font-light mb-3 md:mb-4">INSTITUT FRANÇOIS BOCQUET</h4>
+            <p class="text-xs text-black/40 mb-2">Formation Premium · Service de Luxe</p>
+            
+            <!-- Liens légaux -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 md:mt-7 lg:mt-8 mb-4 md:mb-5 lg:mb-6">
+                <a href="mentions-legales.html" class="text-[10px] tracking-wider text-black/40 hover:text-amber-700 transition-colors duration-300">
+                    Mentions légales
+                </a>
+                <span class="hidden sm:inline text-black/20">|</span>
+                <a 
+                href="CDV-Institut-Francois-Bocquet-2021-2022.pdf"
+                target="_blank"
+                download
+                class="text-[10px] tracking-wider text-black/40 hover:text-amber-700 transition-colors duration-300"
+              >
+                  Conditions générales de vente
+              </a>
+            </div>
+            
+            <p class="text-[10px] text-black/30 tracking-wider">© 2026 Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Menu burger mobile - half-screen drawer
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+        
+        // Fonction pour ouvrir le menu
+        function openMenu() {
+            mobileMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Fonction pour fermer le menu
+        function closeMenu() {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Toggle menu au clic du burger
+        burgerBtn.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        
+        // Fermer le menu en cliquant sur l'overlay
+        menuOverlay.addEventListener('click', closeMenu);
+        
+        // Fermer le menu lors du clic sur un lien
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
+        // Fermer le menu avec la touche ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+    </script>
+
+</body>
+</html>
